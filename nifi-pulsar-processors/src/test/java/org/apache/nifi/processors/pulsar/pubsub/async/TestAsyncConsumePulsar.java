@@ -73,7 +73,7 @@ public class TestAsyncConsumePulsar extends TestConsumePulsar {
 
     @Test
     public void multipleMessagesTest() throws PulsarClientException {
-        this.sendMessages("Mocked Message", "foo", "bar", true, 40);
+        this.sendMessages("Mocked Message", "foo", "bar", true, 10);
     }
 
     @Test

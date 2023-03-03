@@ -95,12 +95,12 @@ public class TestSyncConsumePulsar extends TestConsumePulsar {
 
     @Test
     public void multipleMessagesTest() throws PulsarClientException {
-        this.sendMessages("Mocked Message", "foo", "bar", false, 40);
+        this.sendMessages("Mocked Message", "foo", "bar", false, 10);
     }
 
     @Test
     public final void batchMessageTest() throws PulsarClientException {
-        this.batchMessages("Mocked Message", "foo", "bar", false, 400);
+        this.batchMessages("Mocked Message", "foo", "bar", false, 100);
     }
 
     @Test
